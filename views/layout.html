@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html id="{% block htmlID %}{% endblock %}" class="{% block htmlClass %}{% endblock %}" class="no-js ie ie6" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html id="{% block htmlID %}{% endblock %}" class="{% block htmlClass %}{% endblock %}" class="no-js ie ie7" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html id="{% block htmlID %}{% endblock %}" class="{% block htmlClass %}{% endblock %}" class="no-js ie ie8" lang="ja"> <![endif]-->
+<!--[if IE 9]>    <html id="{% block htmlID %}{% endblock %}" class="{% block htmlClass %}{% endblock %}" class="no-js ie ie9" lang="ja"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html id="{% block htmlID %}{% endblock %}" class="{% block htmlClass %}{% endblock %}" lang="ja" class="no-js"> <!--<![endif]-->
+<head prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="content-style-type" content="text/css; charset=UTF-8" />
+  <meta http-equiv="content-script-type" content="text/javascript; charset=UTF-8" />
+  <meta http-equiv="content-language" content="ja" />
+  <meta name="robots" content="index,follow" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="keywords" content="{% block keywords %}{% endblock %}" />
+  <meta name="description" content="{% block description %}{% endblock %}" />
+  <meta http-equiv="imagetoolbar" content="no" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="apple-touch-icon" sizes="57x57"　href="apple-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+
+  <!-- OGP -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@kajiyan_">
+  <meta name="twitter:title" content="{% block title %}My Site{% endblock %}">
+  <meta name="twitter:description" content="{% block description %}{% endblock %}">
+  <meta name="twitter:creator" content="@sa2hanadi">
+  <meta name="twitter:image" content="http://hirokikajiya.com/tw-card.png">
+  <meta name="twitter:image:width" content="900">
+  <meta name="twitter:image:height" content="400">
+  <meta name="twitter:domain" content="「http://」を除いたURL">
+
+  <meta property="fb:app_id" content="#">
+  <meta property="og:title" content="{% block title %}My Site{% endblock %}">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="{% block description %}{% endblock %}">
+  <meta property="og:url" content="http(s)://webTemplate.jp">
+  <meta property="og:image" content="画像までの絶対パス">
+  
+  <title>{% block title %}My Site{% endblock %}</title>
+  
+  {% block stylesheet %}
+  <link rel="stylesheet" media="all" type="text/css" href="/stylesheets/style.css" />
+  {% endblock %}
+
+  <!-- <link rel="shortcut icon" href="#images/favicon" type="image/x-icon" /> -->
+  
+  {% block headjavascript %}
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  <script src="/javascripts/lib/modernizr-2.8.3.min.js"></script>
+  {% endblock %}
+</head>
+
+<body class="{% block bodyClass %}{% endblock %}">
+  <noscript>
+    <div class="noscript">当サイトを最適な状態で閲覧していただくにはブラウザの<span>javaScriptを有効</span>にしてご利用下さい。<br>javaScriptを無効のままご覧いただいた場合、正しい情報を取得できない場合がございます。</div>
+  </noscript>
+
+  {% block content %}{% endblock %}
+  {% block bottomjavascript %}
+  {% endblock %}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

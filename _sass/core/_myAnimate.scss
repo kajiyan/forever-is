@@ -1,0 +1,44 @@
+@include keyframes(js-animate-photo-fadeOut) {
+  0% {
+    @include opacity(1.0);
+  }
+  100% {
+    @include opacity(0.0);
+  }
+}
+
+@include keyframes(js-animate-photo-fadeIn) {
+  0% {
+    @include opacity(0.0);
+  }
+  100% {
+    @include opacity(1.0);
+  }
+}
+
+@include keyframes(js-fadeIn) {
+  0% {
+    @include opacity(0.0);
+  }
+  100% {
+    @include opacity(1.0);
+  }
+}
+
+@include keyframes(roll-0) {
+  0% {
+    @include rotate(0deg);
+  }
+  25% {
+    @include rotate(70deg);
+  }
+  50% { 
+    @include rotate(180deg);
+  }
+  75% {
+    @include rotate(250deg);
+  }
+  100% {
+    @include rotate(360deg);
+  }
+}

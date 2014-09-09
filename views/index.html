@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block title %}I"s{% endblock %}
+
+{% block head %}
+  {% parent %}
+{% endblock %}
+
+
+{% block headjavascript %}
+  {% parent %}
+{% endblock %}
+
+
+<!-- setup -->
+{% block htmlID %}is{% endblock %}
+{% block htmlClass %}is index{% endblock %}
+{% block bodyClass %}is-body{% endblock %}
+
+{% block content %}
+  <div class="is-canvas-wrapper d">
+    <canvas id="js-is-now-canvas" class="is-canvas"></canvas>
+    <canvas id="js-is-past-canvas" class="is-canvas"></canvas>
+  </div>
+  <h1>I"s</h1>
+{% endblock %}
+
+{% block bottomjavascript %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/javascripts/lib/jquery-2.1.1.min.js"><\/script>')</script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/javascripts/lib/underscore-min.js"></script>
+<script src="/javascripts/lib/jquery.imgloader.min.js"></script>
+<script src="/javascripts/lib/typeFrameWork.js"></script>
+<script src="/javascripts/lib/typeCanvas.js"></script>
+<script src="/javascripts/main.js"></script>
+{% endblock %}
